@@ -19,10 +19,14 @@ public class CartPoleDecision : MonoBehaviour, Decision
             targetDirection,
             transform.right);
 
-        if (angle < 90) {
+        Debug.Log(angle);
+
+        if (angle < 90)
+        {
             return new float[1] {1};
         }
-        else {
+        else
+        {
             return new float[1] {-1};
         }
     }
