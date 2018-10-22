@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ML-Agents/CartPole/Scenes/CartPole.unity
+- path: Assets/ML-Agents/CartPole/Scenes/WheeledCartPole.unity
   isLoaded: 1
   isActive: 1
