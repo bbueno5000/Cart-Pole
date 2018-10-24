@@ -1,4 +1,4 @@
-﻿using MLAgents;
+using MLAgents;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,17 +17,17 @@ public class CartPoleDecision : MonoBehaviour, Decision
 
         float angle = Vector3.Angle(
             targetDirection,
-            transform.right);
+            transform.forward);
 
         Debug.Log(angle);
 
         if (angle < 90)
         {
-            return new float[1] {1};
+            return new float[1] {0.5f};
         }
         else
         {
-            return new float[1] {-1};
+            return new float[1] {-0.5f};
         }
     }
 
